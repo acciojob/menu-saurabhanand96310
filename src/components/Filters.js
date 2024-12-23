@@ -6,7 +6,7 @@ return (
     {
         categoriesList.map((category,i)=>{
             return(
-                <div className="category">
+                <div className="category" data-test-id={`menu-item-${category}`}>
                    <input 
                    id={`filter-btn-${i+1}`} 
                    type="radio" 
@@ -15,7 +15,7 @@ return (
                    value={category} 
                    onChange={(e)=>setCategory(e.target.value)}
                    />
-                   <label htmlFor={category}>{category}</label>
+                   <label htmlFor={`filter-btn-${i+1}`}>{category}</label>
                 </div>
             )
         })
