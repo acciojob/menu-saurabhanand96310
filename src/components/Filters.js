@@ -4,11 +4,11 @@ const Filters=({categoriesList, selectedCategory, setCategory})=>{
 return (
     <div className="categories-list">
     {
-        categoriesList.map(category=>{
+        categoriesList.map((category,i)=>{
             return(
                 <div className="category">
                    <input 
-                   id={category} 
+                   id={`filter-btn-${i+1}`} 
                    type="radio" 
                    name="category" 
                    checked={category==selectedCategory} 

@@ -87,7 +87,7 @@ const [category, setCategory]=useState(categoriesList[0])
 const selectedDishes=menu.filter(dish=> category=="All" || dish.category== category)
 
     return(
-      <div className="menu">
+      <div id="main">
         <h1> Our Menu</h1>
         <Filters categoriesList={categoriesList} selectedCategory={category} setCategory={setCategory}/>
         <Disheslist dishes={selectedDishes}/>

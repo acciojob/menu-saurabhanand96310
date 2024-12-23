@@ -8,8 +8,8 @@ const Disheslist=({dishes})=>{
             {dishes.map(dish=>{
                 return <div className="dish-card">
                     <img src={dish.img}></img>
-                    <div>
-                        <div>
+                    <div >
+                        <div >
                             <b>{dish.title}</b>
                             <span>{dish.price}</span>
                          </div>   
